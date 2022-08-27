@@ -3,7 +3,6 @@ const jwt = require("jsonwebtoken");
 // check token
 const Authenticate = async (req, res, next) => {
   const authHeader = req.header("Authorization");
-  console.log("authHeader", authHeader);
   if (!authHeader) {
     return res.json("Token not found !");
   }
