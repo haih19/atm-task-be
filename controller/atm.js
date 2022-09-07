@@ -4,7 +4,6 @@ const { v4: uuid_v4 } = require("uuid");
 // add atm
 const postAtm = async (req, res) => {
   const atmName = req.body.name;
-  console.log(atmName);
   try {
     const atm = {
       id: uuid_v4(),
